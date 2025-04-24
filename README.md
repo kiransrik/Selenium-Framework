@@ -21,7 +21,6 @@ pytest tests/api/
 
 ### View Test Results:
 - Screenshots are saved in the `screenshots/` folder.
-- Videos are saved in the 'videos/' folder.
 - Test reports are available in the `reports/` folder.
 
 ## 3. API Testing Setup & Example
