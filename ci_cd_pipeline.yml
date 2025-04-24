@@ -27,7 +27,7 @@ jobs:
         run: |
           python -m venv venv
           source venv/bin/activate
-          pip install -r requirements.txt
+          pip install selenium
 
       - name: Set up Chrome for Selenium
         run: |
@@ -44,8 +44,7 @@ jobs:
       - name: Run Selenium tests and generate reports
         run: |
           source venv/bin/activate
-          pytest --html=reports/report.html --self-contained-html
-          pytest --junitxml=reports/output.xml
+          pytest --html=reports/report.html --self-contained-html --junitxml=reports/output.xml
 
       - name: Upload test reports
         uses: actions/upload-artifact@v3
